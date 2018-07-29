@@ -4,5 +4,5 @@ function Stage() {
 
 Stage.prototype.drawBackground = function() {
   ctx.fillStyle = this.backgroundColor;
-  ctx.fillRect(0,0,height,width);
+  ctx.fillRect(0,0,width,height);
 };
