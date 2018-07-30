@@ -8,12 +8,12 @@ var stage = new Stage();
 var input = new Input();
 var hero = new Hero();
 
-function loop() {
+function gameloop() {
   input.listen();
   stage.drawBackground();
   hero.update();
   hero.draw();
-  requestAnimationFrame(loop);
+  requestAnimationFrame(gameloop);
 }
 
-loop();
+gameloop();
